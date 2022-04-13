@@ -8,11 +8,9 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-import java.security.Provider;
+public class Service2 extends Service {
 
-public class service2  extends Service {
-
-    public static final String TAG = service1.class.getName();
+    public static final String TAG = Service1.class.getName();
     private boolean running = false;
 
     @Nullable
@@ -67,8 +65,8 @@ public class service2  extends Service {
 
     private void sendMessage(int id) {
         final int currentId = id;
-        Handler handler = new Handler(service2.this.getMainLooper());
-        handler.post(() -> Toast.makeText(this,TAG + "Service "+ currentId + "isworking", Toast.LENGTH_SHORT).show());
+        Handler handler = new Handler(Service2.this.getMainLooper());
+        handler.post(() -> Toast.makeText(this,TAG + "Service "+ currentId + "is working", Toast.LENGTH_SHORT).show());
     }
 
 }

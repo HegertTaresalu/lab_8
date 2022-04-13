@@ -21,19 +21,30 @@
         android:id="@+id/service2StartBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="368dp"
         android:text="Servivce 2 start"
-        app:layout_constraintStart_toStartOf="@+id/service1Btn"
-        app:layout_constraintTop_toBottomOf="@+id/service1Btn" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Service2StopBtn" />
 
     <Button
         android:id="@+id/Service2StopBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="264dp"
+        android:layout_marginStart="16dp"
         android:layout_marginBottom="368dp"
         android:text="Service 2 Stop"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/changeActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="114dp"
+        android:text="Activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

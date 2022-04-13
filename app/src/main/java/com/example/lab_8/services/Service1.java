@@ -9,11 +9,11 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-public class service1 extends IntentService {
+public class Service1 extends IntentService {
 
-    public static final String TAG = service1.class.getName();
+    public static final String TAG = Service1.class.getName();
 
-    public service1(){
+    public Service1(){
         super(TAG);
     }
     @Override

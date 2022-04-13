@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab_8">
         <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -18,8 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".services.service1"/>
-        <service android:name=".services.service2"/>
+
+        <service android:name=".services.Service1" />
+        <service android:name=".services.Service2" />
+        <service android:name=".services.Service3" />
+        <service android:name=".services.Service4" />
+
+
     </application>
 
 </manifest>
